@@ -1,0 +1,1 @@
+///testSctipt(cool, alsoCool)
