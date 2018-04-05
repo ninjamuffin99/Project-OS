@@ -51,7 +51,8 @@
 {
     if point_in_rectangle(mouse_x, mouse_y, x, y, x + sprite_width, y + sprite_height)
     {
-        instance_create(20, 20, Window);
+        //instance_create(20, 20, Window);
+        testScript(200, 400);
     }
     
 }
