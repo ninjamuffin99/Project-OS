@@ -1,6 +1,7 @@
 /// testSctipt(width, height)
 /// @description testScript(width, height)
 
-newWin = instance_create(20, 20, Window);
-newWin.width = argument0;
-newWin.height = argument1;
+newWin = instance_create(argument0, argument1, Window);
+newWin.width = argument2;
+newWin.height = argument3;
+newWin.winTitle = argument4;
