@@ -14,11 +14,13 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\testScript.gml</script>
+    <script>scripts\textCommentsWhatnotJunk.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Window</object>
     <object>objects\oShortcut</object>
     <object>objects\oInit</object>
+    <object>objects\oShrtNotepad</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
