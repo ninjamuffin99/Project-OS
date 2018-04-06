@@ -57,15 +57,20 @@ tempHeight = height;
           <argument>
             <kind>1</kind>
             <string>
+
 if mouse_check_button(mb_left)
 {
     if point_in_rectangle(mouse_x, mouse_y, x, y, x + width, y + height)
     {
-        x = mouse_x;
-        y = mouse_y;
+        xOffset = 30;
+        yOffset = 30;
         
-        width = x + tempWidth;
-        height = y + tempHeight;
+        x = mouse_x - xOffset;
+        y = mouse_y - yOffset;
+        
+        //width = x + tempWidth;
+        //height = y + tempHeight;
+
         
     }
 }
@@ -76,62 +81,6 @@ if mouse_check_button(mb_left)
       </action>
     </event>
     <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>524</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_color</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>13</kind>
-            <string>16777215</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>511</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_rectangle</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>x</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>y</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>width</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>height</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -148,7 +97,9 @@ if mouse_check_button(mb_left)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_colour(c_black);
+            <string>draw_rectangle(x, y, x + width, y + height, true);
+
+draw_set_colour(c_black);
 draw_text(x + 10, y + 10, winTitle);
 </string>
           </argument>

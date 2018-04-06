@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sShortcut</sprite>
+    <sprite>sprites\sCursor</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,6 +18,7 @@
   <objects name="objects">
     <object>objects\Window</object>
     <object>objects\oShortcut</object>
+    <object>objects\oInit</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
